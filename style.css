@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&display=swap');
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  background: #4C5760;
+}
+
+button {
+  position: absolute;
+  top: 700px;
+  left: 930px;
+  width: 55px;
+}
+
+#title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.loadingClass {
+  /* font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 18px;
+  margin: 15px 0 0 10px;
+  animation: blinkingText 1.2s infinite; */
+  /* color: #555 !important; */
+  margin: 0px auto -30px;
+  text-align: center;
+}
+
+@keyframes blinkingText {
+  0% {
+    color: #555 !important;
+  }
+  49% {
+    color: #555 !important;
+  }
+  60% {
+    color: transparent !important;
+  }
+  99% {
+    color: transparent !important;
+  }
+  100% {
+    color: #555 !important;
+  }
+}
+
+.loadingClass a {
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+}
+
+/*iframe*/
+
+@media only screen and (max-width: 600px) {
+  html, body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+  }
+  button {
+    top: auto !important;
+    left: auto !important;
+    bottom: 10px !important;
+    right: 10px !important;
+    z-index: 10;
+    font-size: 8px;
+    padding: 1px;
+    width: 40px !important;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  #about {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  #aboutDescription {
+    padding: 10px !important;
+    margin-top: 10px !important;
+  }
+}
+
+#about.beforeLoaded a {
+  pointer-events: none;
+}
+
+#SidebarBtn {
+  position: fixed;
+  top: 6px;
+  left: 10px;
+  color: #999;
+  font-size: 2em;
+  cursor: pointer;
+  transition: 0.3s;
+  display: none;
+}
+
+#SidebarBtn a {
+  text-decoration: none;
+  color: lightgray;
+  font-style: normal;
+}
+
+#SidebarBtn a:hover {
+  color: darkgrey;
+  font-style: normal;
+}
+
+#footer {
+  position: fixed;
+  top: -80px;
+  left: 0px;
+  background-color: #666;
+  width: 100%;
+  color: #fff;
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-size: 16px;
+  text-shadow: 1px 1px 1px #000;
+}
+
+#about {
+  background-color: #fff;
+  padding: 2em;
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+  line-height: 1.5em;
+  width: 440px;
+}
+
+#about a {
+  text-decoration: none;
+}
+
+#aboutAuthor {
+  text-align: right;
+  padding-right: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+#aboutAuthor a:hover {
+  color: darkgray;
+}
+
+#aboutTitle {
+  font-size: 1.5em;
+  margin-top: 1.5em;
+  text-align: center;
+}
+
+#aboutDescription {
+  padding-left: 40px;
+  padding-right: 30px;
+  margin: 30px 0px 0px 0;
+  max-width: 320px;
+}
+
+#p5_loading+#startButton {
+  display: none;
+}
+
+#startButton {
+  position: relative;
+  width: 100px;
+  padding: 5px;
+  border: black solid 1px;
+  margin: 30px auto 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#startButton:hover {
+  background-color: black;
+  color: white;
+  transition: background-color 0.5s;
+}
+
+#aboutClose {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#aboutClose a {
+  color: #666;
+}
+
+#aboutClose img {
+  width: 60px;
+}
+
+#aboutClose a:hover {
+  color: darkred;
+}
+
+span.avoidwrap {
+  display: inline-block;
+}

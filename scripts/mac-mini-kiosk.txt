@@ -1,0 +1,28 @@
+----------------------------
+MINI-SETUP
+----------------------------
+
+
+Settings
+---------
+New user: dhowe/admin/ff, set autologin, then restart
+Disable screenSaver, all notifications, power-saving, password-lock, set blank desktop bg
+Install Chrome, homebrew, npm, git, wget if/as needed
+
+
+$ sudo apachectl start
+$ cd /Library/WebServer/Documents/ && git clone https://github.com/dhowe/autochar.git && git checkout artmm
+$ cp scripts/zshr ~/.zshrc
+$ npm install
+$ cp scripts/install-pagekite.sh ~/install-pagekite.sh 
+$ sudo ~/install-pagekite.sh 
+
+$ cp scripts/pagekite.plist /Library/LaunchDaemons/pagekite.service.plist
+$ sudo launchctl load /Library/LaunchDaemons/pagekite.service.plist 
+
+App
+-------
+Test scripts/rotvh.app
+If fails, opens scripts/rotvh.scpt in ScriptEditor
+   save as application to Desktop
+Then add to dhowe Login Items

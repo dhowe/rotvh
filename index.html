@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
+  <title>Radical of the Vertical Heart</title>
+  <link rel="stylesheet" href="lib/jquery.modal.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="lib/p5.min.js"></script>
+  <script src="node_modules/tone/build/Tone.min.js"></script>
+  <script src="lib/audioshim.js"></script>
+  <script src="node_modules/fast-levenshtein/levenshtein.js"></script>
+  <script src="cutils.js"></script>
+  <script src="autochar.js"></script>
+  <script src="lib/jquery-3.5.1.min.js"></script>
+  <script src="lib/jquery.modal.min.js"></script>
+  <script src="sketch.js"></script>
+</head>
+
+<body>
+  <div id="mySidenav" class="sidenav"></div>
+  <div id="SidebarBtn"><a href="#about" rel="modal:open">☰</a></div>
+  <div id="page">
+    <div id="about" class="modal beforeLoaded">
+      <div id="p5_loading" class="loadingClass">
+        <img src="res/loading_icon.gif" alt="loading icon" width="100" height="70">
+      </div>
+      <div id="startButton">
+        Click to start
+      </div>
+      <div id="aboutTitle">Radical of the Vertical Heart 忄</div>
+      <div id="aboutDescription">
+        <p>
+          The newest in the <em>Atomic Language Machines</em> series, this reading machine traverses the Chinese lexicon
+          by repeatedly making the minimal allowable change to the sub-character components of&nbsp;characters.
+        </p>
+        <p>Rather than evaluating letter mutations, as in alphabetic machines, this logographic reader uses a novel
+          algorithm for distance, based on analysis of the strokes, radicals and subcomponents of characters.
+        </p>
+        <p>When the machine lands on sensitive words, such as those disallowed by China's Great
+          Firewall, a red warning flash is issued and it jumps from traditional to simplified or vice versa.
+          See the
+          <a href="https://rednoise.org/daniel/detail.html#radicaloftheverticalheart" target="_blank">project
+            page</a> for further&nbsp;documentation.<br /></p>
+      </div>
+      <div id="aboutAuthor"><a href="https://rednoise.org/daniel" target="_new">Daniel C Howe</a><br />
+        <!--br><a href="https://www.twitter.com/@danielchowe" target="_blank">@danielchowe</a><br-->
+        June 1, 2020</div>
+
+      <div id="aboutClose"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img
+            alt="Creative Commons License" style="border-width:0" target="_new"
+            src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></div>
+    </div>
+  </div>
+
+</body>
+
+</html>

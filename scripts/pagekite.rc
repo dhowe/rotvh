@@ -1,0 +1,30 @@
+###[ Current settings for pagekite.py v1.5.2.201011. ]#########
+#
+## NOTE: This file may be rewritten/reordered by pagekite.py.
+#
+
+##[ account details ]##
+
+##################
+### ENTER HERE ###
+##################
+
+
+##[ Front-end settings: use pagekite.net defaults ]##
+defaults
+
+##[ Back-ends and local services ]##
+service_on  = http:@kitename                   : localhost:80      : @kitesecret
+service_on  = raw-22:@kitename                 : localhost:22      : @kitesecret
+
+backend=raw/5900:vnc.user.pagekite.me:localhost:5900:SECRET
+
+
+
+
+##[ Miscellaneous settings ]##
+savefile = /Users/dhowe/.pagekite.rc
+max_read_bytes = 16256x3.100
+
+###[ End of pagekite.py configuration ]#########
+END

@@ -1,0 +1,30 @@
+{
+  "name": "autochar",
+  "version": "1.3.01",
+  "description": "",
+  "directories": {
+    "test": "tests"
+  },
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "electron .",
+    "debug-sketch": "mocha --inspect-brk p5/sketch.js",
+    "debug-tests": "mocha --inspect-brk test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhowe/Autochar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fast-levenshtein": "^2.0.6",
+    "p5": "^1.0.0",
+    "tone": "^0.12.80"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}

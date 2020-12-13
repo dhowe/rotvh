@@ -1,0 +1,10 @@
+delay 2
+
+try
+  do shell script "killall 'Google Chrome' 2>/dev/null"
+on error
+end try
+
+delay 2
+
+do shell script "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome --kiosk --remote-debugging-port=9222 --autoplay-policy=no-user-gesture-required --app=http://localhost/autochar/index.html"
