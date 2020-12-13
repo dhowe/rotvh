@@ -1,5 +1,5 @@
 # Radical of the Vertical Heart 忄
 
-Live version here: https://rednoise.org/rotvh
+Live browser version: https://rednoise.org/rotvh
 
-Documentation here: https://rednoise.org/daniel/radicaloftheverticalheart
+Documentation: https://rednoise.org/daniel/radicaloftheverticalheart
