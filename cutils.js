@@ -100,7 +100,12 @@ class CharUtils {
 
       let wes2 = data[literals[i]].editString;
 
-      // chinese min-edit-dist
+      /* 
+       * logographic distance
+       *   number of different full characters less 1 (via basic Levenshtein)
+       *   plus Levenshtein distance between two decomposition strings
+       *   TODO: add stroke count, similarity-metric for 12 decompositions?
+       */
       let cost = this.editDist.get(input, literals[i]) - 1;
       med = Math.max(0, cost) + this.editDist.get(wes, wes2);
 
