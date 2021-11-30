@@ -102,9 +102,12 @@ class CharUtils {
 
       /* 
        * logographic distance
-       *   number of different full characters less 1 (via basic Levenshtein)
-       *   plus Levenshtein distance between two decomposition strings
-       *   TODO: add stroke count, similarity-metric for 12 decompositions?
+       *   - number of different full characters less 1 (via basic Levenshtein)
+       *   - plus Levenshtein distance between two decompositions for each char
+       *     from [ ⿰ ⿱ ⿻ ⿳ ⿺ ⿸ ⿲ ⿹ ⿴ ⿵ ⿶ ⿷ ]
+       *   - this gives an integer distance >= 0 (with 0 for identical strings)
+       *   - the floating point component 0 <= f < 1) is added by comparing the number of strokes
+       *     in differing sub-parts normalized against a max-stroke count (not used in production)
        */
       let cost = this.editDist.get(input, literals[i]) - 1;
       med = Math.max(0, cost) + this.editDist.get(wes, wes2);
